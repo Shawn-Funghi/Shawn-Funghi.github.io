@@ -1,0 +1,33 @@
+    /* 引用思源黑體 */
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap');
+    /* 引用思源宋體 */
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+h1{
+    BORDER-STYLE: double;
+    border-width: 3px;
+    text-align: center;
+}
+
+#egg{
+    background-color: black;
+    color: #ffffff;
+    border-style: solid;
+    border-bottom-color: black;
+    border-bottom-width: 1px;
+    padding: 4px;
+    margin-left: 2px;
+    margin-right: 6px;
+}
+.old{
+    background-color: #f5303d;
+    padding: 3px;
+    border-radius: 20px;
+    margin-bottom: 0px;
+    margin-right: 50px;
+}
+.new{
+    background-color: #1b1813;
+    border-radius: 15px;
+    margin-top: 0px;
+    margin-left: 50px;
+}
