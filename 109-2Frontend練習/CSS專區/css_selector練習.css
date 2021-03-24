@@ -1,7 +1,7 @@
     /* 引用思源黑體 */
-    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap');
     /* 引用思源宋體 */
-    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500&display=swap');
 h1{
     BORDER-STYLE: double;
     border-width: 3px;
@@ -24,10 +24,12 @@ h1{
     border-radius: 20px;
     margin-bottom: 0px;
     margin-right: 50px;
+    font-family: 'Noto Serif TC';
 }
 .new{
-    background-color: #1b1813;
+    background-color: #1b181350;
     border-radius: 15px;
     margin-top: 0px;
     margin-left: 50px;
+    font-family: 'Noto Sans TC';
 }
