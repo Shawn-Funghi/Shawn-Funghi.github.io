@@ -6,6 +6,10 @@ h1{
     BORDER-STYLE: double;
     border-width: 3px;
     text-align: center;
+    background-color: aqua;
+    font-family: 'Noto Serif TC';
+    border-radius: 3px;
+    margin: 3px;
 }
 
 #egg{
@@ -21,15 +25,18 @@ h1{
 .old{
     background-color: #f5303d;
     padding: 3px;
-    border-radius: 20px;
+    border-radius: 10px;
     margin-bottom: 0px;
     margin-right: 50px;
     font-family: 'Noto Serif TC';
 }
 .new{
     background-color: #1b181350;
-    border-radius: 15px;
+    border-radius: 10px;
     margin-top: 0px;
     margin-left: 50px;
     font-family: 'Noto Sans TC';
+}
+.separator{
+    height:5px;
 }

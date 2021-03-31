@@ -1,0 +1,13 @@
+img {
+    height: 250px;
+    border-radius: 50%;
+}
+.藍色橫條 {
+    height: 300px;
+    width: 300px;
+    background-color: rgb(104, 250, 255);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 50%;
+    background-image: url(/109-2Frontend圖庫/漏油7.jpg);
+}
