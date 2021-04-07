@@ -1,0 +1,22 @@
+.center {
+ margin-left: auto;
+ margin-right:auto ;
+}
+.combine{
+    width: fit-content;
+}
+.sd{
+    width: 100px;
+    height: 100px;
+}
+.md{
+    width: 200px;
+    height: 200px;
+}
+.ld{
+    width: 500px;
+    height: 500px;
+}
+.changeinline{
+    display: inline-block;
+}
