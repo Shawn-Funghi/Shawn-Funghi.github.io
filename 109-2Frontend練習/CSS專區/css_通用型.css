@@ -20,3 +20,10 @@
 .changeinline{
     display: inline-block;
 }
+.circle{
+    border-radius: 50%;
+}
+.verticlemiddle{
+    margin-top: calc(50vh - 101px);
+    margin-bottom: calc(50vh - 101px);
+}

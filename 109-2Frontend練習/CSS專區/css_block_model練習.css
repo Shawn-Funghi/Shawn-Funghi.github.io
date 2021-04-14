@@ -6,22 +6,16 @@
     background-image: url(/109-2Frontend圖庫/dog.jpg);
 }
 .dog {
-    height: 300px;
-    width: 300px;
     background-color: rgb(129, 255, 104);
     border-width: 1px;
     border-style: solid;
-    border-radius: 50%;
     background-image: url(/109-2Frontend圖庫/dog.jpg);
     background-size: cover;
 }
 .cat {
-    height: 300px;
-    width: 300px;
     background-color: rgb(169, 104, 255);
     border-width: 1px;
     border-style: solid;
-    border-radius: 50%;
     background-image: url(/109-2Frontend圖庫/dog-cat.jpg);
     background-size:cover;
     background-position-x: right;
