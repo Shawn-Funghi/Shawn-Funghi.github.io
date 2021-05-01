@@ -8,3 +8,11 @@
     background-size: cover;
     
 }
+.border{
+    border-width: 300px;
+    border-style: solid;
+    border-color: black;
+    background-color: aqua;
+    height:300px
+    
+}
