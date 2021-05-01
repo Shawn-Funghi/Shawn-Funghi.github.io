@@ -17,6 +17,10 @@
     width: 500px;
     height: 500px;
 }
+.等比縮放{
+    width: fit-content;
+    height: fit-content;
+}
 .changeinline{
     display: inline-block;
 }

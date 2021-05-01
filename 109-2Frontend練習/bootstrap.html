@@ -1,36 +1,63 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="/109-2Frontend練習/CSS專區/css_通用型.css">
     <title>Bootstrap的使用</title>
 </head>
+
 <body>
-    <h1>Bootstrap的使用</h1>
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="../109-2Frontend圖庫/cat.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="../109-2Frontend圖庫/dog-cat.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="../109-2Frontend圖庫/dog.jpg" class="d-block w-100" alt="...">
-          </div>
+
+    <div class="container-fluid">
+        <div class="p-5 mb-4 bg-light rounded-3">
+            <div class="container-fluid py-5">
+                <h1 class="display-5 fw-bold">Test</h1>
+                <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one
+                    in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it
+                    to your liking.</p>
+                <button class="btn btn-primary btn-lg" type="button">Example button</button>
+            </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    <p>Bootstrap 是全球最流行的前端開源工具包，它支援 Sass 變數和 mixins、響應式網格系統、大量的預建元件和強大的 JavaScript 外掛，助你快速設計和自定義響應式、移動裝置優先的站點。</p>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+        <div class="row">
+            <div class="col-9">
+                <link rel="stylesheet" href="../109-2Frontend圖庫/dog.jpg">
+            </div>
+            <div class="col-3">col-3ieuniue</div>
+        </div>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../109-2Frontend圖庫/漏油2.jpg" class="d-block w-100 等比縮放" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../109-2Frontend圖庫/漏油6.jpg" class="d-block w-100 等比縮放" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../109-2Frontend圖庫/漏油7.jpg" class="d-block w-100 等比縮放" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <p>Bootstrap 是全球最流行的前端開源工具包，它支援 Sass 變數和 mixins、響應式網格系統、大量的預建元件和強大的 JavaScript 外掛，助你快速設計和自定義響應式、移動裝置優先的站點。</p>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>
