@@ -1,5 +1,25 @@
 .border{
-    /* border-width: 1px; */
+    margin: 1%;
+    border-radius: 15px;
+
+}
+.displayaqua{
+    background-color: aqua;
+}
+.displayblack{
+    background-color: black;
+}
+.displayred{
+    background-color: red;
+}
+.displayyellow{
+    background-color: yellow;
+}
+.displaygreen{
+    background-color: green;
+}
+.test{
     border-radius: 10%;
+    border-width: 5px;
     border-color: black;
 }
