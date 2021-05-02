@@ -11,23 +11,272 @@
     <title>Document</title>
 </head>
 
-<body>
-    <div class="container-fluid ">
-        <div class="row justify-content-center displayred border">
-            <div class="col-4 col-auto displayyellow border">
-                歡迎來到我的網站
-            </div>
-        </div>
-        <div class="row displaygreen">
-            <div class="col-auto ">
-                歡迎來到我的網站
-            </div>
-        </div>
-    </div>
+<body class="bodycolor">
+    <!-- 導覽列 -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
-    </script>
+    <nav class="navbar navbar-light bg-light p-1 justify-content-start fs-6">
+
+
+        <a class="nav-link  text-muted " aria-current="page" href="#"> 目前沒有功能 </a>
+        <a class="nav-link  me-auto text-muted" aria-current="page" href="#">但是為了美觀</a>
+        <a class="nav-link  text-muted " aria-current="page" href="#">放些東西較好</a>
+
+
+    </nav>
+    <hr class="m-0">
+    <div class=" overflow-auto">
+        <div class="row">
+            <div class="col-sm bg-light"></div>          
+            <div class="col-sm-11  bodycolor">
+                <!-- 開頭介紹 -->
+                <div class="mx-5 my-4 p-4 d-flex flex-column text-center bg-dark rounded text-white">
+                    <div class="col-auto">
+                        <p class="display-1 mb-1 fst-italic fw-bold">歡迎來到</p>
+                    </div>
+                    <div class="col-auto">
+                        <p class="fs-3 m-0 fst-italic">蘇雋勛的個人網站</p>
+                    </div>
+                    <div class="col-auto">
+                        <p class="fs-6 m-0">這裡寫著關於這個人的學歷、興趣</p>
+
+                    </div>
+                    <div class="col-auto">
+                        <p class="fs-6 m-0">接著看下去吧</p>
+                    </div>
+                </div>
+                <!-- 自我介紹 -->
+                <div class="row justify-content-center mx-5">
+
+                    <div class="col-auto my-2 mx-md-0 p-0 mx-5">
+                        <img src="/109-2Frontend圖庫/就是我.jpg" alt="" class="me m-0 border rounded border-white">
+                    </div>
+                    <!-- 內文 -->
+                    <div class="col-md-auto my-2 p-1 mx-0 border rounded d-flex flex-column bg-light">
+                        <div class="m-0 p-1 fs-5 fw-bold">
+                            嗨囉 我是蘇雋勛
+                        </div>
+                        <div class="m-0 p-1 fw-light">
+                            我來自台灣，新北市
+                        </div>
+                        <div class="m-0 p-1 fw-light">
+                            目前是台灣大學的大學生
+                        </div>
+                        <div class="m-0 p-1 fw-light">
+                            現在正在參與著程式設計課程
+                        </div>
+                        <div class="m-0 p-1 fw-light">
+                            這是我的網頁...
+                        </div>
+                        <div class="d-flex flex-column">
+                            <button class="pcenter btn btn-primary" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                圖片
+                            </button>
+                            <div class="pcenter collapse m-1" id="collapseExample">
+                                <div class="d-flex flex-column badge bg-warning text-dark fw-bold">
+                                    <div class="m-1">圖中是我高二校慶時班上剛好清空</div>
+                                    <div class="m-1">閒著沒事疊的椅子塔</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <hr class="w-100  my-1">
+                    <!-- 下方簡介 -->
+                    <div class="container">
+                        <div class="row ">
+                            <!-- 左方學歷 -->
+                            <div class="col-md-6 ">
+                                <div class="border rounded p-1 bg-light">
+                                    <h4 class="m-1"> <span class="badge bg-warning text-dark">學歷</span> </h4>
+                                    <div class="row mb-1 mx-1">
+                                        <div class="col-auto NTU">
+                                        </div>
+                                        <div class="col overflow-auto d-flex flex-column content ">
+                                            <div class="fs-4 fw-bold">國立台灣大學</div>
+                                            <div class="fw-light p-1">
+                                                台灣第一學府，(雖然國際排名沒有很高)，常常會有阿公阿嬤阿伯阿母或是幼稚園來溜小孩，或者成為年輕人野餐好去處
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-1 mx-1">
+                                        <div class="col-auto PCSH">
+                                        </div>
+                                        <div class="col overflow-auto d-flex flex-column content">
+                                            <div class="fs-4 fw-bold">板橋高中</div>
+                                            <div class="fw-light p-1">
+                                                位於新北市的一所高中，比旁邊的板橋國小還小，因此常被調侃為板橋國小附屬高級中學
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="border rounded p-1 bg-light">
+                                    <h4 class="m-1"> <span class="badge bg-info text-dark">興趣</span> </h4>
+                                    <div class="row mb-1 mx-1">
+
+                                        <div class="col overflow-auto d-flex flex-column content">
+                                            <div class="fs-4 fw-bold">程式語言</div>
+                                            <div class="fw-light p-1">
+                                                不知道從哪哩來的觀念，總之我不敢說我會甚麼甚麼語言，而是說我會哪些語言的基礎語法
+                                                ，目前我會的只有<span
+                                                    class="badge bg-danger text-white align-middle">Java</span>
+                                                ，因為<span class="badge bg-warning text-dark align-middle">C</span>和
+                                                <span class="badge bg-warning text-dark align-middle">C++</span>的差不多忘光了
+                                            </div>
+                                        </div>
+                                        <div class="col-auto java"></div>
+                                    </div>
+                                    <div class="row mb-1 mx-1">
+
+
+                                        <div class="col overflow-auto d-flex flex-column content">
+                                            <div class="fs-4 fw-bold">語言</div>
+                                            <div class="fw-light p-1">
+                                                學習日文中，想要找出人類學語言的秘密
+                                            </div>
+                                        </div>
+                                        <div class="col-auto japanese"> </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="hrset pcenter my-1">
+                    <!-- 輪播 -->
+
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <ol class="carousel-indicators mb-0 ">
+                            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active bg-dark">
+                            </li>
+                            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="bg-dark"></li>
+                            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="bg-dark"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row my-4 justify-content-center">
+                                    <div class="col-auto py-2">
+                                        <img src="/109-2Frontend圖庫/方吉頭像.jpg" class="d-block mx-2 profile my-4"
+                                            alt="...">
+                                    </div>
+                                    <div class="col-auto py-2 m-4 d-flex flex-column vh-30 ">
+                                        <div class="display-3 fw-bold">方吉頭像</div>
+                                        <div class="display-5">我最常用的頭像</div>
+                                        <div class="fs-3">但其實我有修改原圖的某些地方才做為頭像</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+
+                                <div class="row my-4 justify-content-center">
+                                    <div class="col-auto py-2">
+                                        <img src="/109-2Frontend圖庫/日本雲.jpg" class="d-block  japancloud my-4" alt="...">
+                                    </div>
+                                    <div class="col-auto py-2 m-4 d-flex flex-column vh-30 ">
+                                        <div class="display-3 fw-bold">沖繩的雲</div>
+                                        <div class="display-5">去沖繩玩時拍的雲</div>
+                                        <div class="fs-3">那天早上從窗戶外拍縮時時順便拍的</div>
+                                        <div class="fs-3">拍完後手機變得超燙</div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row my-4 justify-content-center">
+                                    <div class="col-auto py-2">
+                                        <img src="/109-2Frontend圖庫/阿里山.jpg" class="d-block  alishan my-4" alt="...">
+                                    </div>
+                                    <div class="col-auto py-2 m-4 d-flex flex-column vh-30 ">
+                                        <div class="display-3 fw-bold">阿里山的雲海</div>
+                                        <div class="display-5">和朋友去阿里山拍的風景</div>
+                                        <div class="fs-3">那天的日出被雲擋住了</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </a>
+                    </div>
+
+                    <hr class="hrset pcenter my-1">
+                    <!-- 指導群 -->
+                    <div class="d-flex fs-2 fw-bold justify-content-center">
+                        <div class=" badge bg-white text-dark align-middle">指導群</div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 ">
+                                <div class="d-flex flex-column border rounded bg-warning p-4">
+                                    <div class="teacher pcenter border border-circle border-dark border-2 "></div>
+                                    <div class="pcenter">
+                                        <h2>陳琨 老師</h2>
+                                    </div>
+                                    <div class="pcenter m-2">
+                                        <h4>曾經幫銀行解決信用卡憑證問題，目前找不回彼特幣的帳號</h4>
+
+                                    </div>
+                                    <div class="pcenter">
+                                        <a class="btn btn-secondary" href="#" role="button">只能回到頁首的按鈕</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 ">
+                                <div class="d-flex flex-column border rounded bg-success text-white p-4">
+                                    <div class="TA pcenter border border-circle border-dark border-2"></div>
+                                    <div class="pcenter">
+                                        <h2>郭偉森 助教</h2>
+                                    </div>
+                                    <div class="pcenter m-2">
+                                        <h4>正在思考如何優化自己寫的基因演算法</h4>
+                                    </div>
+                                    <div class="pcenter">
+                                        <a class="btn btn-secondary" href="#" role="button">只能回到頁首的按鈕</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="hrset pcenter my-1">
+                </div>
+            </div>
+            <div class="col-sm bg-light"></div>  
+        </div>
+        <!-- 結尾 -->
+        <figure class="container-fluid p-2 m-0 bg-light">
+            <blockquote class="blockquote">
+                <p>感覺很有風味</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+                來源 <cite title="Source Title">蘇雋勛</cite>
+                於2021/05/02花了兩天假日自己摸索大量Bootstrap內容
+            </figcaption>
+            <figcaption class="blockquote-footer">
+                但還是無法完全了解到底誰在背後影響誰
+            </figcaption>
+            <figcaption class="blockquote-footer">
+                © 2021-2021
+            </figcaption>
+        </figure>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>

@@ -1,25 +1,129 @@
-.border{
+.border {
     margin: 1%;
     border-radius: 15px;
 
 }
-.displayaqua{
+
+.displayaqua {
     background-color: aqua;
 }
-.displayblack{
+
+.displayblack {
     background-color: black;
 }
-.displayred{
+
+.displayred {
     background-color: red;
 }
-.displayyellow{
+
+.displayyellow {
     background-color: yellow;
 }
-.displaygreen{
+
+.displaygreen {
     background-color: green;
 }
+
+.mainphoto {
+    display: block;
+    height:80vh;
+    width: cal( 80vh * 1.3);
+    margin-left: auto;
+    margin-right: auto;
+}
+.me{
+    height: 30vh;
+    width: 39vh;
+    border-radius: 1%;
+    background-size: cover;
+}
+.NTU{
+    height: 150px;
+    width: 130px;
+    border-radius: 5px;
+    background-image: url(/109-2Frontend圖庫/台大正門.jpg);
+    background-position-y: bottom;
+    background-position-x: center;
+    background-size: cover;
+}
+.PCSH{
+    height: 150px;
+    width: 130px;
+    border-radius: 5px;
+    background-image: url(/109-2Frontend圖庫/板橋高中.jpg);
+    background-position-y: top;
+    background-size: cover;
+    background-position-x: cal(center - center / 3);
+}
+.content{
+    height: 150px;
+}
+.java{
+    height: 150px;
+    width: 150px;
+    border-radius: 5px;
+    background-image: url(/109-2Frontend圖庫/Java.png);
+    background-size: cover;
+}
+.japanese{
+    height: 150px;
+    width: 150px;
+    border-radius: 5px;
+    background-image: url(/109-2Frontend圖庫/日文.png);
+    background-position-y: center;
+    background-position-x: center;
+    background-size: cover;
+}
+.teacher{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-image: url(/109-2Frontend圖庫/老師.PNG);
+    background-size: cover;
+}
+.TA{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-image: url(/109-2Frontend圖庫/助教.PNG);
+    background-size: cover;
+}
+.pcenter{
+    margin-left: auto;
+    margin-right: auto;
+}
+.hrset{
+    width: 90vw;
+}
+.bodycolor{
+    background-color: rgb(252, 255, 242);
+}
 .test{
-    border-radius: 10%;
-    border-width: 5px;
-    border-color: black;
+    position: relative;
+    padding: 1rem;
+    margin: 1rem -.75rem 0;
+    border: solid #dee2e6;
+    border-width: 1px 0 0;
+}
+.japancloud{
+    height: 30vh;
+    width: 51vh;
+    border-radius: 1%;
+    background-size: cover;
+}
+.alishan{
+    height: 30vh;
+    width: 39vh;
+    border-radius: 1%;
+    background-size: cover;
+}
+.profile{
+    height: 30vh;
+    width: 30vh;
+    border-radius: 1%;
+    background-size: cover;
+}
+.picture{
+    height: 30vh;
+
 }
