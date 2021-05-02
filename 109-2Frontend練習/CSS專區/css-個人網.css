@@ -26,46 +26,52 @@
 
 .mainphoto {
     display: block;
-    height:80vh;
-    width: cal( 80vh * 1.3);
+    height: 80vh;
+    width: cal(80vh * 1.3);
     margin-left: auto;
     margin-right: auto;
 }
-.me{
+
+.me {
     height: 30vh;
     width: 39vh;
     border-radius: 1%;
     background-size: cover;
 }
-.NTU{
+
+.NTU {
     height: 150px;
-    width: 130px;
+    width: 150px;
     border-radius: 5px;
     background-image: url(/109-2Frontend圖庫/台大正門.jpg);
     background-position-y: bottom;
     background-position-x: center;
     background-size: cover;
 }
-.PCSH{
+
+.PCSH {
     height: 150px;
-    width: 130px;
+    width: 150px;
     border-radius: 5px;
     background-image: url(/109-2Frontend圖庫/板橋高中.jpg);
     background-position-y: top;
     background-size: cover;
     background-position-x: cal(center - center / 3);
 }
-.content{
+
+.content {
     height: 150px;
 }
-.java{
+
+.java {
     height: 150px;
     width: 150px;
     border-radius: 5px;
     background-image: url(/109-2Frontend圖庫/Java.png);
     background-size: cover;
 }
-.japanese{
+
+.japanese {
     height: 150px;
     width: 150px;
     border-radius: 5px;
@@ -74,56 +80,66 @@
     background-position-x: center;
     background-size: cover;
 }
-.teacher{
+
+.teacher {
     height: 100px;
     width: 100px;
     border-radius: 50%;
     background-image: url(/109-2Frontend圖庫/老師.PNG);
     background-size: cover;
 }
-.TA{
+
+.TA {
     height: 100px;
     width: 100px;
     border-radius: 50%;
     background-image: url(/109-2Frontend圖庫/助教.PNG);
     background-size: cover;
 }
-.pcenter{
+
+.pcenter {
     margin-left: auto;
     margin-right: auto;
 }
-.hrset{
+
+.hrset {
     width: 90vw;
 }
-.bodycolor{
+
+.bodycolor {
     background-color: rgb(252, 255, 242);
 }
-.test{
+
+.test {
     position: relative;
     padding: 1rem;
     margin: 1rem -.75rem 0;
     border: solid #dee2e6;
     border-width: 1px 0 0;
 }
-.japancloud{
+
+.japancloud {
     height: 30vh;
     width: 51vh;
     border-radius: 1%;
     background-size: cover;
 }
-.alishan{
+
+.alishan {
     height: 30vh;
     width: 39vh;
     border-radius: 1%;
     background-size: cover;
 }
-.profile{
+
+.profile {
     height: 30vh;
     width: 30vh;
     border-radius: 1%;
     background-size: cover;
 }
-.picture{
+
+.picture {
     height: 30vh;
 
 }
