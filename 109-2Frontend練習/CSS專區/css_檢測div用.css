@@ -1,31 +1,4 @@
-.black {
-   background-color: black;
-}
-
-.background {
-    width: 300px;
-    height: 300px;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-
-.border {
-    width:300px;
-    height: 300px;
-    border-style: solid;
-    border-color: black;
-    background-color: aqua;
-
-    background-image: url(/109-2Frontend圖庫/漏油2.jpg);
+.test {
+    height: 100px;
     
-    background-size: cover;
-}
-.font{
-    font-weight: 500;
-    font-size: large;
-    
-}
-.mainphoto{
-    background-image: url(/109-2Frontend圖庫/阿里山.jpg);
 }
