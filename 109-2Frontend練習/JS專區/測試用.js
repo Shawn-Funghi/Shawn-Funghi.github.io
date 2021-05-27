@@ -17,10 +17,16 @@ $(document).ready(function () {
     tl.add({
         targets:'h1',
         top:'20%',
-        scale:[0,1],
         duration:4000,
         opacity:1,
-    }, '-=1600')
+    }, '-=1600').add({
+        targets:'#t',
+        top:'50%',
+        duration:4000,
+        opacity:1,
+    },'-=1600')
+
+
     let rotateMe = anime({
         targets:'section',
         scaleX:'2',
@@ -31,8 +37,7 @@ $(document).ready(function () {
         easing:'easeOutExpo',
         autoplay: false
     })
-    document.querySelector('h1').addEventListener('mouseover' ,()=>{
+    $('h1').mouseover(function () { 
         rotateMe.play();
-
-    })
+    });
 });

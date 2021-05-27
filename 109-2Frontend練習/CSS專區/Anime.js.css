@@ -18,7 +18,14 @@ section {
     grid-template-columns: repeat(10, auto);
 
 }
-
+#t{
+    font-size: 5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    z-index: 2;
+}
 div{
     background-color: rgb(255, 255, 255);
     height: 100vh;
