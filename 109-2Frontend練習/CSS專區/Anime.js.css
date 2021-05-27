@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+h1 {
+    top: 40%;
+    left: 12%;
+    opacity: 0;
+    font-size: 5em;
+    position: absolute;
+    z-index: 2;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(10, auto);
+
+}
+
+div{
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+};

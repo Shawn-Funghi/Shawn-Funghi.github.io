@@ -1,4 +1,41 @@
 .test {
-    height: 100px;
-    
+    height: 500px;
+}
+.block{
+    border: 1px solid;
+    border-color: black;
+    height: 50px;
+    width: 50px;
+    background-color:chartreuse;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 5px;
+    display:inline-block;
+}
+.blockH{
+    border: 1px solid;
+    border-color: black;
+    height: 50px;
+    width: 50px;
+    background-color:chartreuse;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 5px;
+    display:inline-block;
+}
+.grid{
+    margin-left: auto;
+    margin-right: auto;
+}
+#b1{
+    border: 1px solid;
+    border-color: black;
+    height: 50px;
+    width: 50px;
+    background-color:chartreuse;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 5px;
+    display:inline-block;
+    position: absolute;
 }
