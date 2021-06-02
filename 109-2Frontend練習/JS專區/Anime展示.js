@@ -1,52 +1,43 @@
 $(document).ready(function () {
-    $('#moveright').mouseenter(function () {
-        anime({
-            targets: '#moveright',
-            translateX: '50vw',
-            opacity: [0.2, 1],
-            duration: 3000,
-            easing: 'linear',
-            direction: 'alternate'
-        })
-    });
-    $('#rotateright').mouseenter(function () {
-        anime({
-            targets: '#rotateright',
-            translateX: '50vw',
-            rotate: [0, 720],
-            scale: [0.5, 1],
-            duration: 3000,
-            easing: 'easeInOutQuad',
-            direction: 'alternate'
-        })
-    });
-    $('#process').mouseenter(function () {
-        let tl = anime.timeline();
-        tl.add({
-            targets: ['#bar','#process'],
-            value: [0, 1],
-            easing: 'linear',
-            duration: 1000,
-        }).add({
-            targets: '#process', 
-            translateX: '50vw',
-            easing:'easeOutCirc',
-            duration: 2000,
-        }).add({
-            targets: '#process', 
-            easing:'easeOutCirc',
-            translateX: '0vw',
-            duration: 2000
-        })
-
-    });
-    anime({
-        targets:'#circle',
-        width:'100%',
-        borderRadius: ['0%', '10%'],
-        duration: 2000,
-        direction: 'alternate',
-        easing: 'linear',
-        loop:true
+    let tl = anime.timeline({
+        duration:750,
+        easing:'easeOutExpo'
     })
+    tl.add({
+        targets:'section div',
+        backgroundColor:'rgb(255, 40, 40)',
+        delay:anime.stagger(75,{from:'first'}),
+        width:'100%'
+    }).add({
+        targets:'section div',
+        backgroundColor:'rgb(252, 189, 189)',
+        delay:anime.stagger(75,{from:'last'}),
+        width:'90%',
+    })
+    tl.add({
+        targets:'h1',
+        top:'20%',
+        duration:4000,
+        opacity:1,
+    }, '-=1600').add({
+        targets:'#t',
+        top:'50%',
+        duration:4000,
+        opacity:1,
+    },'-=1600')
+
+
+    let rotateMe = anime({
+        targets:'section',
+        scaleX:'2',
+        scaleY:'2',
+        translateX:'40%',
+        rotate:'45deg',
+        duration:5000,
+        easing:'easeOutExpo',
+        autoplay: false
+    })
+    $('h1').mouseover(function () { 
+        rotateMe.play();
+    });
 });

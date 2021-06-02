@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Anime.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="head">
+        <button class="btn_start">啟動</button>
+        <button class="btn_stop">停止</button>
+        <span>這是介紹Anime.js的網站</span>
+    </div>
+    <section>
+        <div style="background-color: aliceblue;"></div>
+
+        <div id="main">
+            <div style="background-color: rgb(255, 232, 224);" id="top">
+                <span style="text-align: center; font-size: 1.6em;">
+                    Anime.js是一個可以展現動畫的程式庫，雖然程式碼簡單，但是只要搭配CSS跟JQuery的功能，就能弄出一些很炫的效果。導入的方式跟Bootstrap一樣，可以用下載的或是用網路的，網路的網址是：
+                </span><br>
+                <div style="text-align: center;font-size: 2em;">
+                    &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.js"&gt; </script>
+                </div>
+                <span style="text-align:left; font-size:1.4em;">其程式碼都是由導入一堆物件所組成，其核心為：</span>
+                <br>
+                <div style="font-size: 2em;font-weight: bold; text-align: center;">anime()</div>
+                <span style="text-align:left; font-size:1.4em;">在裡面加入各種「物件」就可以使用各種效果，而每個「動畫」都必須導入一個物件，那就是「對象」物件：</span>
+                <div style="font-size: 2em;font-weight: bold; text-align: center;">targets:''</div>
+                <span style="text-align:left; font-size:1.4em;">'
+                    '裡面輸入的語法跟jQuery的$('')一樣。不過因為沒有快速選字功能，必須將每個物件的名稱、導入值型態打對，否則不會有效果</span>
+                <div style="font-size: 2em;font-weight: bold; text-align: center;">background<span
+                        style="color: red;">c</span>olor:' ' X</div>
+                <div style="font-size: 2em;font-weight: bold; text-align: center;">background<span
+                        style="color: rgb(32, 255, 2);">C</span>olor:' ' O</div>
+                <div style="font-size: 2em;font-weight: bold; text-align: center;">backgroundColor:rgb(0,0,0) X</div>
+                <div style="font-size: 2em;font-weight: bold; text-align: center;">backgroundColor:<span
+                        style="color: rgb(9, 255, 0);">'</span>rgb(0,0,0)<span style="color: rgb(9, 255, 0);">'</span> O
+                </div>
+            </div>
+
+            <div class="title">
+                <span class="word">基</span>
+                <span class="word">本</span>
+                <span class="word">功</span>
+                <span class="word">能</span>
+            </div>
+
+            <div class="guide">
+                <span>平移</span> <button id="move"> 測試</button>
+                <div class="block" id="btn_move"></div>
+                <span></span>
+            </div>
+            <div class="guide three_mid">
+                <span>旋轉</span> <button id="spin"> 測試</button>
+                <div class="block" id="btn_spin"></div>
+            </div>
+            <div class="guide">
+                <span>縮放</span> <button id="scale"> 測試</button>
+                <div class="block" id="btn_scale"></div>
+            </div>
+
+
+            <div class="guide">
+                <span>透明度</span> <button id="btn_opacity"> 測試</button>
+                <div class="block" id="opacity"></div>
+                <span></span>
+            </div>
+            <div class="guide three_mid">
+                <span>延遲</span> <button id="btn_delay"> 測試</button>
+                <div class="block" id="delay"></div>
+            </div>
+            <div class="guide">
+                <span>變形</span> <button id="btn_transform"> 測試</button>
+                <div class="block" id="transform"></div>
+            </div>
+            <div class="title">應用實例 過場1
+                <button class="btn_start2">啟動</button>
+                <button class="btn_stop2">停止</button>
+            </div>
+            <div class="title" style="padding: 0;">
+                <div class="example1">
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                </div>
+            </div>
+            <div class="title" style="padding: 0;">應用實例 過場2
+                <button class="btn_start3">啟動</button>
+                <button class="btn_stop3">停止</button>
+                <div class="example2">
+                    <span class="T">會降落的標題</span>
+                    <span class="t">其實是別人的範例</span>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                </div>
+            </div>
+            <div class="title" style="padding: 0;">應用實例 觸發效果
+                <div class="example3">
+                    <div class="gather" id="gather1">
+                        左上角
+                    </div>
+                    <div class="gather" id="gather2">
+                        正上方
+                    </div>
+                    <div class="gather" id="gather3">
+                        右上角
+                    </div>
+                    <div class="gather" id="gather4">
+                        正作坊
+                    </div>
+                    <div class="gather" id="gather5">
+                        移到這
+                    </div>
+                    <div class="gather" id="gather6">
+                        正右方
+                    </div>
+                    <div class="gather" id="gather7">
+                        左下角
+                    </div>
+                    <div class="gather" id="gather8">
+                        正下方
+                    </div>
+                    <div class="gather" id="gather9">
+                        右下角
+                    </div>
+                </div>
+            </div>
+            <div class="title" style="padding: 0;">應用實例 圖案</div>       
+                <div class="guide" style="height:10em;">
+                    <span>模擬音量</span> <button id="rect_btn"> 測試</button>
+                    <div class="rect"></div>
+                    <span></span>
+                </div>
+                <div class="guide three_mid" style="height:10em;">
+                    <span>載入圈</span> <button id="cir_btn"> 測試</button>
+                    <div class="circle"></div><div class="stick"></div>
+
+                    
+                </div>
+                <div class="guide" style="height:10em;">
+                    <span>文字</span> <button id="text_btn"> 測試</button>
+                    <br>
+                    <span class="text">F</span><span class="text">o</span><span class="text">r</span>                 
+                    <span class="text"> </span><span class="text">t</span><span class="text">e</span><span class="text">s</span><span class="text">t</span><span class="text">i</span><span class="text">n</span><span class="text">g</span>
+                    
+                    
+                    
+                    
+                </div>
+            
+        </div>
+
+
+
+        <div style="background-color: aliceblue;"></div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Anime.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.js"></script>
+    <script src="./Anime.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

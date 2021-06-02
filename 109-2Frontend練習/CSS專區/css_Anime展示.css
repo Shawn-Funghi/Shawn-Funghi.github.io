@@ -1,16 +1,32 @@
-body{
-    padding: 5%;
+body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
 }
-.block{
-    height: 500px;
-    width: 500px;
-    margin-top: 80px;
-    background-color:aquamarine;
-    border:1px solid black;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(1.325rem + .9vw);
-    display: flex;
-    padding: 0.5em;
-    
+
+h1 {
+    top: 40%;
+    left: 12%;
+    opacity: 0;
+    font-size: 5em;
+    position: absolute;
+    z-index: 2;
 }
+
+section {
+    display: grid;
+    grid-template-columns: repeat(10, auto);
+
+}
+#t{
+    font-size: 5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    z-index: 2;
+}
+div{
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+};
