@@ -319,4 +319,40 @@ $(document).ready(function () {
         })
 
     });
+
+    let w = anime({
+        targets:'.example4 .white',
+        backgroundColor:[
+            {value:'rgb(0,0,0)',delay:anime.stagger(50,{grid:[20,7],from:'center'}),easing:'easeInOutCirc',endDelay:500},
+            {value:'rgb(0,0,0)',delay:anime.stagger(50,{grid:[20,7],from:'center'}),easing:'easeInOutCirc',endDelay:3000},
+            {value:'rgb(255,255,255)',delay:anime.stagger(100,{grid:[20,7],from:'center'}),easing:'steps(1)'}
+        ],
+        scale:[
+            {value:(1,1),delay:anime.stagger(50,{grid:[20,7],from:'center'}),endDelay:500},
+            {value:(1,0.8),delay:anime.stagger(50,{grid:[20,7],from:'center'},{easing:'steps(1)'})},
+            {value:(1,1),delay:anime.stagger(50,{grid:[20,7],from:'center'},{easing:'steps(1)'}),endDelay:2000},   
+            {value:0.8,delay:anime.stagger(10,{grid:[20,7],from:'center'},{easing:'steps(1)'}),endDelay:1000},
+        ],
+         autoplay:false
+    })
+
+$('.btn_example4').click(function () { 
+    w.play();
+    
+});
+
+    let pink = anime.timeline();
+
+   pink.add({
+       targets:'.example5',
+       width:('0%','100%'),
+       easing:'linear',
+       duration:300,
+      
+       }).add({
+        targets:'.ex_center',
+        width:('0%','100%'),
+        easing:'linear',
+        duration:200,
+       })
 });

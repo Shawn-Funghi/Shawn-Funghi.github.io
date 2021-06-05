@@ -1,0 +1,11 @@
+anime({
+    targets:'div',
+    keyframes:[
+        {opacity:[1,08],width:['-100%','-80%'],height:['-100%','-80%'],delay:anime.stagger(100,{grid:[30,30],from:'last'})},
+        {opacity:[0.8,1],width:['-80%','-100%'],height:['-80%','-100%'],delay:anime.stagger(100,{grid:[30,30],from:'last'}),delay:2000}  
+    ],
+    easing:'linear',
+    duration:1000,
+    //direction:'alternate',
+    loop:true
+})

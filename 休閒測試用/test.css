@@ -1,0 +1,14 @@
+body{
+    padding: 5%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(30,150px);
+    grid-template-rows: repeat(30,150px);
+}
+body > div{
+    width:100%;
+    height: 100%;
+    
+    background-color: black;
+    border: 1px solid rgb(255, 255, 255);
+}    

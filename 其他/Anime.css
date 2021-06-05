@@ -171,7 +171,7 @@ section {
 #gather2 {
    
     position: relative;
-    top: -200%;
+    top: -100%;
     opacity: 0;
 }
 
@@ -257,4 +257,29 @@ section {
     position: relative;
     left:-10%;
     opacity: 0;
+}
+.example4{
+    display: grid;
+    grid-template-columns: repeat(20,5%);
+}
+.white{
+    width: 100%;
+    height: 0;
+    padding-top: 100%;
+    background-color: white;
+}
+.example5{
+    position: relative;
+    margin-top: 10%;
+    height: 700px;
+    width: 0%;
+    margin-bottom: 10%;
+    background-color: rgb(255, 162, 159);
+}
+.ex_center{
+    position:absolute;
+    top:25%;
+    height: 350px;
+    background-color: rgb(155, 53, 49);
+    width: 0%;
 }
