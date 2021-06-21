@@ -103,7 +103,7 @@ $(document).ready(function () {
             { value: 0, easing: 'easeInOutExpo', duration: 800 },
             { value: 1, easing: 'easeInOutExpo', duration: 1200 }
         ],
-        delay: anime.stagger(50, { grid: [20, 7], from: 'last' }),
+        delay: anime.stagger(200, { grid: [20, 7], from: 'center' }),
         loop: true,
         autoplay: false
     })
