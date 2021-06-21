@@ -1,23 +1,26 @@
 $(document).ready(function () {
-    let mouse = {
-        x: 0,
-        y: 0,
-    }
+    $('#start').click(function () {
+        let start = anime.timeline({
+            duration: 500,
+            easing: 'linear'
+        });
+        start.add({
+            targets: '.hint',
+            keyframes: [
+                { opacity: 0 },
+                { translateY: '-=200%' },
+            ]
+        }).add({
+            targets: 'body',
+            backgroundColor: 'rgb(147, 147, 255)'
+        }).add({
+            targets: '.back',
+            opacity: 1
+        }).add({
+            targets: '.nav',
+            top: '0%'
+        })
+    });
+  
 
-
-    window.addEventListener('mousemove', (event) => {
-        mouse.x = event.pageX;
-        mouse.y = event.pageY;
-        $('.small').text(mouse.x + " " + mouse.y);
-
-        
-
-    })
-    anime({
-        targets: '.small',
-      
-        loop: true,
-        easing: 'linear',
-    })
-    
 });
