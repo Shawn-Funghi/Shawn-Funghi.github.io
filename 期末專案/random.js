@@ -21,24 +21,38 @@ $(document).ready(function () {
                     color[i] = "yellow";
                     break;
                 case 3:
-                    color[i] = "green";
+                    color[i] = "yellowgreen";
                     break;
                 case 4:
-                    color[i] = "blue";
+                    color[i] = "skyblue";
                     break;
                 case 5:
                     color[i] = "purple";
                     break;
                 case 6:
-                    color[i] = "white";
+                    color[i] = "black";
                     break;
                 case 7:
-                    color[i] = "black";
+                    color[i] = "white";
                     break;
             }
         }
 
         console.log(color);
 
+    });
+
+    var buttonColor;
+
+    $('.select_button').click(function () { 
+        buttonColor = $(this).css('background-color'); 
+    });
+    $('.display_button').click(function () { 
+        if(buttonColor == undefined){
+
+        }else{
+            $(this).css('background-color', buttonColor);
+        }
+        
     });
 });
