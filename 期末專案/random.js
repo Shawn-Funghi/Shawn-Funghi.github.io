@@ -37,7 +37,8 @@ $(document).ready(function () {
                     break;
             }
         }
-
+        
+       
         console.log(color);
 
     });
@@ -46,13 +47,24 @@ $(document).ready(function () {
 
     $('.select_button').click(function () { 
         buttonColor = $(this).css('background-color'); 
+        
     });
     $('.display_button').click(function () { 
-        if(buttonColor == undefined){
+        console.log(buttonColor);
+        if(buttonColor === undefined){
 
         }else{
             $(this).css('background-color', buttonColor);
         }
+        
+    });
+    $('.confirm').click(function () { 
+        buttonColor = undefined;
+        
+    });
+
+    $('#restart').click(function () { 
+        $('.display_button').css('background-color', 'white');
         
     });
 });

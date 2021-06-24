@@ -14,15 +14,20 @@
 <body>
 
     <nav class="nav navbar navbar-light bg-light">
-        <form class="container-fluid justify-content-start">
-            <button id="t" type="button" class="btn btn-outline-success" style="height: 8vh;" data-bs-toggle="modal"
-                data-bs-target="#staticBackdrop">
-                Hint
-            </button>
-        </form>
+
+        <button id="t" type="button" class="btn btn-outline-success" style="height: 8vh;" data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop">
+            Hint
+        </button>
+
+
+        <button id="restart" style="height: 8vh;">
+            重新開始
+        </button>
+
     </nav>
 
-
+    <!-- <div class="barrier"></div> -->
     <!-- Modal -->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -39,6 +44,9 @@
             </div>
         </div>
     </div>
+
+
+
     <div class="back">
         <div class="display" id="d_1">
             <div class="state">
@@ -128,13 +136,24 @@
 
         </div>
     </div>
+
+
+    <div class="disabled" style="left: 5%;" id="5"></div>
+    <div class="disabled" style="left: 16.25%;" id="16.25"></div>
+    <div class="disabled" style="left: 27.5%;" id="27.5"></div>
+    <div class="disabled" style="left: 38.75%;" id="38.75"></div>
+    <div class="disabled" style="left: 50%;" id="50"></div>
+    <div class="disabled" style="left: 61.25%;" id="61.25"></div>
+    <div class="disabled" style="left: 72.5%;" id="72.5"></div>
+    <div class="disabled" style="left: 83.75%;" id="83.75"></div>
+
     <div class="select">
         <button class="select_button" style="background-color: red;"></button>
         <button class="select_button" style="background-color: orange;"></button>
         <button class="select_button" style="background-color: yellow;"></button>
         <button class="select_button" style="background-color: yellowgreen;"></button>
         <button class="select_button" style="background-color: skyblue;"></button>
-        <button class=" select_button" style="background-color: purple;"></button>
+        <button class="select_button" style="background-color: purple;"></button>
         <button class="select_button" style="background-color: black;"></button>
         <button class="select_button" style="background-color: white;"></button>
         <button class="select_button confirm">

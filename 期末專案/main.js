@@ -1,7 +1,8 @@
 $(document).ready(function () {
     $('#start').click(function () {
-        $('.back').css('z-index', '0');
+
         $('.select').css('z-index', '0');
+        $('.back').css('z-index', '0');
         let start = anime.timeline({
             duration: 500,
             easing: 'linear'
@@ -24,18 +25,22 @@ $(document).ready(function () {
         })
     });
     var col = 1;
-    $('.confirm').click(function () { 
+    $('.confirm').click(function () {
         col++;
+        let lf = 5 + (col - 2) * 11.25;
+        let id = '#' + lf ;
+        console.log(id);
+        console.log($(id).css('z-index'));
         let col_id = '#d_' + col;
         console.log(col_id);
         anime({
-            targets:col_id,
+            targets: col_id,
             opacity: 1,
             duration: 500,
             easing: 'linear'
         })
         
     });
-  
+
 
 });

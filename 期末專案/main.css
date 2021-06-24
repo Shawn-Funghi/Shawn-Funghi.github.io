@@ -9,6 +9,15 @@
     grid-template-rows: 80% 20%;
 }
 
+.barrier {
+    z-index: -1;
+    top: 0%;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(127, 255, 212, 0);
+}
+
 .hint-content {
     background-color: white;
 
@@ -26,12 +35,20 @@
     width: 90%;
     height: 65vh;
     opacity: 0;
-    background-color: aliceblue;
-    z-index: -1;
+    background-color: rgb(219, 246, 233);
+    z-index: -2;
     display: grid;
     grid-template-columns: repeat(8, 12.5%);
 }
-
+.disabled {
+    position: absolute;
+    top: 10%;
+    width: 11.25%;
+    height: 65vh;
+    opacity: 0.8;
+    background-color: aqua;
+    z-index: -2;
+}
 .select {
     padding-top: 2em;
     position: absolute;
@@ -41,11 +58,13 @@
     height: 20vh;
     opacity: 0;
     background-color: rgb(196, 227, 255);
-    z-index: -1;
+    z-index: -2;
     display: grid;
     grid-template-columns: repeat(8, auto);
     grid-template-rows: 70% 30%;
 }
+
+
 
 body {
     background-color: rgb(255, 255, 255);
@@ -68,7 +87,7 @@ body {
 
 .display_button {
     background-color: white;
-    border: 0.8em aliceblue solid ;
+    border: 0.8em aliceblue solid;
 }
 
 .state {
@@ -76,18 +95,23 @@ body {
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
     padding: 1em;
+    background-color: azure;
 }
-.select_button { 
-    border: 0.8em aliceblue solid ;
+
+.select_button {
+    border: 0.8em aliceblue solid;
 }
 
 .confirm {
     grid-column-start: 3;
     grid-column-end: 7;
-    border: 0.2em rgb(81, 106, 128) solid ;
-    background-color:azure;
+    border: 0.2em rgb(81, 106, 128) solid;
+    background-color: azure;
 }
-.check{
+
+.check {
     padding: 2%;
     background-color: blue;
 }
+
+
