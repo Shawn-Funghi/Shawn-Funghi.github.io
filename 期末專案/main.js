@@ -3,6 +3,9 @@ $(document).ready(function () {
 
         $('.select').css('z-index', '0');
         $('.back').css('z-index', '0');
+        $('.disabled').css('z-index', '1');
+        $('.d500').css('z-index', '-2');
+
         let start = anime.timeline({
             duration: 500,
             easing: 'linear'
@@ -26,13 +29,17 @@ $(document).ready(function () {
     });
     var col = 1;
     $('.confirm').click(function () {
+        console.log('顯示側的col ='+col)
         col++;
-        let lf = 5 + (col - 2) * 11.25;
-        let id = '#' + lf ;
-        console.log(id);
-        console.log($(id).css('z-index'));
+        let before = 500 + (col - 2) * 1125;
+        let before_id = '.d' + before ;
+        $(before_id).css('z-index', '1');
+        
+        let after = before + 1125;
+        let after_id = '.d' + after ;
+        $(after_id).css('z-index', '-2');
+        
         let col_id = '#d_' + col;
-        console.log(col_id);
         anime({
             targets: col_id,
             opacity: 1,
@@ -41,6 +48,9 @@ $(document).ready(function () {
         })
         
     });
-
+    $('#restart').click(function () { 
+        col = 1;
+        console.log('顯示側col restart =' + col)
+    });
 
 });
