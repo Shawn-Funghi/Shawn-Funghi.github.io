@@ -20,16 +20,31 @@
 
 .hint-content {
     background-color: white;
-    font-size: 1.5em;
+    font-size: 1px;
     font-weight: bold;
-
 }
 
 #start {
     border: 0;
     border-top: 1px solid gray;
-    font-size: 3em;
+    font-size: xx-large;
 }
+
+@media screen and (min-width:800px) {
+    .hint-content {
+        background-color: white;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    #start {
+        border: 0;
+        border-top: 1px solid gray;
+        font-size: 3em;
+    }
+}
+
+
 
 .back {
     position: absolute;
@@ -53,12 +68,11 @@
     background-color: aquamarine;
     opacity: 0;
 }
-
 .select {
     padding-top: 2em;
     position: absolute;
     left: 5%;
-    bottom: 5%;
+    top: 75%;
     width: 90%;
     height: 20vh;
     opacity: 0;
@@ -68,6 +82,24 @@
     grid-template-columns: repeat(8, auto);
     grid-template-rows: 70% 30%;
 }
+@media screen and (min-width:800px) {
+    .select {
+        padding-top: 2em;
+        position: absolute;
+        left: 5%;
+        bottom: 5%;
+        width: 90%;
+        height: 20vh;
+        opacity: 0;
+        background-color: rgb(196, 227, 255);
+        z-index: -2;
+        display: grid;
+        grid-template-columns: repeat(8, auto);
+        grid-template-rows: 70% 30%;
+    }
+}
+
+
 
 
 
@@ -89,9 +121,16 @@ body {
     column-gap: 5px;
 }
 
+@media screen and(min-width:800px) {
+    .display_button {
+        background-color: white;
+        border: 0.8em aliceblue solid;
+    }
+}
+
 .display_button {
     background-color: white;
-    border: 0.8em aliceblue solid;
+    border: 5px aliceblue solid;
 }
 
 .state {
@@ -103,15 +142,34 @@ body {
 }
 
 .select_button {
-    border: 0.8em aliceblue solid;
+    margin: 1px;
+    border: 1px solid lightgray;
 }
 
 .confirm {
     grid-column-start: 3;
     grid-column-end: 7;
-    border: 0.2em rgb(81, 106, 128) solid;
+    margin: 1px;
+    border: 1px solid lightgray;
     background-color: azure;
 }
+
+@media screen and(min-width:800px) {
+    .select_button {
+        border: 0.8em aliceblue solid;
+    }
+
+    .confirm {
+        grid-column-start: 3;
+        grid-column-end: 7;
+        border: 0.2em rgb(81, 106, 128) solid;
+        background-color: azure;
+    }
+}
+
+
+
+
 
 .check {
     margin: 10%;
