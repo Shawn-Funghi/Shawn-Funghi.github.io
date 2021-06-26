@@ -20,12 +20,15 @@
 
 .hint-content {
     background-color: white;
+    font-size: 1.5em;
+    font-weight: bold;
 
 }
 
 #start {
     border: 0;
     border-top: 1px solid gray;
+    font-size: 3em;
 }
 
 .back {
