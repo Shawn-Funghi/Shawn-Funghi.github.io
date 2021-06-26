@@ -25,6 +25,11 @@ $(document).ready(function () {
         }).add({
             targets: '.nav',
             top: '0%'
+        }).add({
+            targets:'.disabled',
+            opacity:0.2,
+            duration:500,
+            easing:'linear'
         })
     });
     var col = 0;
