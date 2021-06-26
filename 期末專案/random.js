@@ -203,12 +203,23 @@ $(document).ready(function () {
         };
         console.log("新的答案為");
         console.log(color);
-        $('.display_button').css('background-color', 'white');
-        $('.check').css('opacity', '0'); 
+        let re = anime.timeline({
+            duration:500,
+            easing:'linear'
+        }).add({
+            targets:'#d_8 , .check',
+            opacity:0
+        }).add({
+            targets:'.display_button',
+            backgroundColor:'rgb(255, 255, 255)',
+        }).add({
+            targets:'.disabled',
+            opacity:0.2
+        })
+        
+
         $('.disabled').css('z-index', '1');
-        $('.disabled').css('opacity', '0.2');
         $('.d500').css('z-index', '-2');
-        $('#d_8').css('opacity', '0');
         col = 1;
         win = 0;
         console.log('執行側 col restart =' + col)
