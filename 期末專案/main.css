@@ -50,6 +50,8 @@
     width: 11.25%;
     height: 65vh;
     z-index: -2;
+    background-color: aquamarine;
+    opacity: 0.2;
 }
 
 .select {

@@ -35,10 +35,12 @@ $(document).ready(function () {
                 let before = 500 + col * 1125;
                 let before_id = '.d' + before;
                 $(before_id).css('z-index', '1');
+                $(before_id).css('opacity', '0.2');
 
                 let after = before + 1125;
                 let after_id = '.d' + after;
                 $(after_id).css('z-index', '-2');
+                $(after_id).css('opacity', '0');
                 col++;
             }
             if (col == 7) {
@@ -46,6 +48,7 @@ $(document).ready(function () {
             }
         }else{
             $('.disabled').css('z-index', '1');
+            $('.disabled').css('opacity', '0');
         }
     });
     $('#restart').click(function () {

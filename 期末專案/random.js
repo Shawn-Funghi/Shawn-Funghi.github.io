@@ -206,6 +206,7 @@ $(document).ready(function () {
         $('.display_button').css('background-color', 'white');
         $('.check').css('opacity', '0'); 
         $('.disabled').css('z-index', '1');
+        $('.disabled').css('opacity', '0.2');
         $('.d500').css('z-index', '-2');
         $('#d_8').css('opacity', '0');
         col = 1;
