@@ -125,7 +125,9 @@ $(document).ready(function () {
                 console.log('correct = ' + correct)
                 win = 1;
                 $('#restart').css('background-color', 'gold');
+                $('#New').css('background-color', 'gold');
                 document.getElementById('restart').innerHTML = '恭喜你贏啦 再來一局吧吧'
+                document.getElementById('New').innerHTML = '或者你想重玩也可以'
                 $('#d_8 .state').css('margin', '10%');
                 $('#d_8 .state').css('background-color', 'gold');
                 for (let i = 0; i < 4; i++) {
@@ -149,8 +151,10 @@ $(document).ready(function () {
                 let total = col_id + " " + '#dbutton' + id;
                 $(total).css('background-color', color[i]);
             }
-            document.getElementById('restart').innerHTML = '失敗啦 重新開始';
+            document.getElementById('restart').innerHTML = '失敗啦 新的一局';
+            document.getElementById('New').innerHTML = '失敗啦 重新開始';
             $('#restart').css('background-color', 'rgb(255, 130, 130)');
+            $('#New').css('background-color', 'rgb(255, 130, 130)');
             $('#d_8 .state').css('background-color', 'rgb(255, 130, 130)');
             anime({
                 targets: '#d_8',
@@ -163,7 +167,7 @@ $(document).ready(function () {
     });
     //重新開始
     $('#restart').click(function () {
-        console.log("重新一局");
+        console.log("新的一局");
         for (let i = 0; i < 4; i++) {
             num[i] = random();
             switch (num[i]) {
@@ -216,16 +220,40 @@ $(document).ready(function () {
             targets:'.disabled',
             opacity:0.2
         })
-        
-
         $('.disabled').css('z-index', '1');
         $('.d500').css('z-index', '-2');
         col = 1;
         win = 0;
-        console.log('執行側 col restart =' + col)
-        document.getElementById('restart').innerHTML = '重新開始';
         $('#restart').css('background-color', 'rgb(255, 255, 255)');
-
+        $('#New').css('background-color', 'rgb(255, 255, 255)');
+        document.getElementById('New').innerHTML = '重新開始'
+        document.getElementById('restart').innerHTML = '新的一局'
+    });
+    $('#New').click(function () {
+        console.log("重新開始");
+        console.log("原本答案");
+        console.log(color);
+        let re = anime.timeline({
+            duration:500,
+            easing:'linear'
+        }).add({
+            targets:'#d_8 , .check',
+            opacity:0
+        }).add({
+            targets:'.display_button',
+            backgroundColor:'rgb(255, 255, 255)',
+        }).add({
+            targets:'.disabled',
+            opacity:0.2
+        })
+        $('.disabled').css('z-index', '1');
+        $('.d500').css('z-index', '-2');
+        col = 1;
+        win = 0;
+        $('#New').css('background-color', 'rgb(255, 255, 255)');
+        $('#restart').css('background-color', 'rgb(255, 255, 255)');
+        document.getElementById('New').innerHTML = '重新開始'
+        document.getElementById('restart').innerHTML = '新的一局'
 
     });
 });

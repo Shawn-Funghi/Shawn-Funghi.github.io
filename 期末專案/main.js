@@ -60,5 +60,8 @@ $(document).ready(function () {
         col = 0;
         console.log('顯示側col restart =' + col)
     });
-
+    $('#New').click(function () {
+        col = 0;
+        console.log('顯示側col restart =' + col)
+    });
 });

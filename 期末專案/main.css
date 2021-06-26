@@ -205,7 +205,10 @@ body {
     background-color: white;
     border: 2px solid green;
 }
-
+#New{
+    background-color: white;
+    border: 2px solid green;
+}
 #d_8 {
     opacity: 0;
 }
