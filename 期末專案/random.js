@@ -42,7 +42,7 @@ $(document).ready(function () {
         };
     };
     //初始顏色
-    // color = ["rgb(154, 205, 50)", "rgb(255, 255, 0)", "rgb(128, 0, 128)", "rgb(255, 255, 0)"];
+    //color = ["rgb(255, 255, 255)", "rgb(255, 0, 0)", "rgb(154, 205, 50)", "rgb(255, 255, 255)"];
     console.log(color);
     //上顏色
     var buttonColor;
@@ -181,7 +181,7 @@ $(document).ready(function () {
                     break;
                 case 3:
                     //yellowgreen
-                    color[i] = "rgb(154, 205, 50) ";
+                    color[i] = "rgb(154, 205, 50)";
                     break;
                 case 4:
                     // skyblue
