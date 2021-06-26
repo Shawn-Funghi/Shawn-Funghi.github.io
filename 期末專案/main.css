@@ -110,7 +110,7 @@
 
 @media screen and (min-width:800px) {
     .select {
-        padding-top: 2em;
+        padding-top: 10px;
         position: absolute;
         left: 5%;
         bottom: 5%;
@@ -124,11 +124,6 @@
         grid-template-rows: 70% 30%;
     }
 }
-
-
-
-
-
 body {
     background-color: rgb(255, 255, 255);
 }
@@ -178,6 +173,7 @@ body {
     margin: 1px;
     border: 1px solid lightgray;
     background-color: azure;
+    font-size: 0.5em;
 }
 
 @media screen and(min-width:800px) {
@@ -190,6 +186,7 @@ body {
         grid-column-end: 7;
         border: 0.2em rgb(81, 106, 128) solid;
         background-color: azure;
+        height: 10vh;
     }
 }
 
