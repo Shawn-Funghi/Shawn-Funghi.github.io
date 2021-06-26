@@ -47,7 +47,7 @@
 .back {
     position: absolute;
     left: 5%;
-    top: 10%;
+    top: 20%;
     width: 90%;
     height: 65vh;
     opacity: 0;
@@ -59,7 +59,7 @@
 
 .disabled {
     position: absolute;
-    top: 10%;
+    top: 20%;
     width: 11.25%;
     height: 65vh;
     z-index: -2;
@@ -97,7 +97,7 @@
     padding-top: 10px;
     position: absolute;
     left: 5%;
-    top: 75%;
+    top: 85%;
     width: 90%;
     height: 20vh;
     opacity: 0;
