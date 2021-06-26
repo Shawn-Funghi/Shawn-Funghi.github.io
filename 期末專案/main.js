@@ -20,36 +20,36 @@ $(document).ready(function () {
             targets: 'body',
             backgroundColor: 'rgb(147, 147, 255)'
         }).add({
-            targets: '.back,.select,#d_1',
+            targets: '.back,.select',
             opacity: 1
         }).add({
             targets: '.nav',
             top: '0%'
         })
     });
-    var col = 1;
+    var col = 0;
     $('.confirm').click(function () {
-        console.log('顯示側的col ='+col)
-        col++;
-        let before = 500 + (col - 2) * 1125;
-        let before_id = '.d' + before ;
-        $(before_id).css('z-index', '1');
-        
-        let after = before + 1125;
-        let after_id = '.d' + after ;
-        $(after_id).css('z-index', '-2');
-        
-        let col_id = '#d_' + col;
-        anime({
-            targets: col_id,
-            opacity: 1,
-            duration: 500,
-            easing: 'linear'
-        })
-        
+        if ($('#restart').css('background-color')!='rgb(255, 215, 0)') {
+            if (col < 7) {
+                console.log('顯示側的col =' + col)
+                let before = 500 + col * 1125;
+                let before_id = '.d' + before;
+                $(before_id).css('z-index', '1');
+
+                let after = before + 1125;
+                let after_id = '.d' + after;
+                $(after_id).css('z-index', '-2');
+                col++;
+            }
+            if (col == 7) {
+                $('.d8375').css('z-index', '1');
+            }
+        }else{
+            $('.disabled').css('z-index', '1');
+        }
     });
-    $('#restart').click(function () { 
-        col = 1;
+    $('#restart').click(function () {
+        col = 0;
         console.log('顯示側col restart =' + col)
     });
 
