@@ -9,15 +9,6 @@
     grid-template-rows: 80% 20%;
 }
 
-.barrier {
-    z-index: -1;
-    top: 0%;
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    background-color: rgba(127, 255, 212, 0);
-}
-
 .hint-content {
     background-color: white;
     font-size: 0.5em;
@@ -67,7 +58,7 @@
     opacity: 0;
 }
 
-@media screen and(min-width:800px) {
+@media screen and (min-width:800px) {
     .back {
         position: absolute;
         left: 5%;
@@ -113,7 +104,7 @@
         padding-top: 10px;
         position: absolute;
         left: 5%;
-        bottom: 5%;
+        top: 75%;
         width: 90%;
         height: 20vh;
         opacity: 0;
@@ -124,6 +115,7 @@
         grid-template-rows: 70% 30%;
     }
 }
+
 body {
     background-color: rgb(255, 255, 255);
 }
@@ -188,6 +180,7 @@ body {
         background-color: azure;
         height: 10vh;
     }
+
     .state {
         display: grid;
         grid-template-columns: 50% 50%;
@@ -195,7 +188,7 @@ body {
         padding: 1em;
         background-color: azure;
     }
-    
+
 }
 
 
