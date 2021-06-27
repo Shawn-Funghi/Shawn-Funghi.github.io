@@ -20,6 +20,6 @@ Shawn-Funghi.github.io/其他/Anime.html
 以及按鈕的點選函式進行判斷，最後搭配anime.js的動畫呈現出來  
 特色的話...我有調整成響應式網頁，所以手機也可以玩呦  
 還有，我個人覺得蠻難的......  
-Shawn-Funghi.github.io/期末專案/Main.html  
+https://shawn-funghi.github.io/%E6%9C%9F%E6%9C%AB%E5%B0%88%E6%A1%88/Main.html  
 介紹影片：  https://www.youtube.com/watch?v=goR3fXmm-eo  
 玩玩看吧  
