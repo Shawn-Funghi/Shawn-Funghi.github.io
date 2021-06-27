@@ -21,5 +21,5 @@ Shawn-Funghi.github.io/其他/Anime.html
 特色的話...我有調整成響應式網頁，所以手機也可以玩呦  
 還有，我個人覺得蠻難的......  
 Shawn-Funghi.github.io/期末專案/Main.html  
-介紹影片：  
+介紹影片：  https://www.youtube.com/watch?v=goR3fXmm-eo  
 玩玩看吧  
